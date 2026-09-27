@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>tere liye ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff0f5);
+            color: #4a2435;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heart {
+            font-size: 80px;
+            animation: heartbeat 1.4s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 20px 0;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            line-height: 1.6;
+            max-width: 650px;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #ff4f81;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background: #e83d70;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .message {
+            background: rgba(255,255,255,0.75);
+            padding: 30px;
+            border-radius: 20px;
+            line-height: 1.8;
+            font-size: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card .emoji {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .surprise {
+            display: none;
+            margin-top: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #e83d70;
+            animation: appear 1s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            padding: 30px;
+            font-size: 15px;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+
+    <div class="container">
+
+        <section class="hero">
+
+            <div class="heart">❤️</div>
+
+            <h1>Hey, [chhavi]!</h1>
+
+            <p class="subtitle">
+                Ye internet ka ek chota sa kona h meri trf se tere liye.
+                kyuki kbhi kbhi ek msg vo nhi btaa skta jo m khna chahta hu 
+                ki tu mere liye kitni speacial h.
+            </p>
+
+            <button onclick="scrollToMessage()">
+                apna surprise khol le  💌
+            </button>
+
+        </section>
+
+
+        <!-- MESSAGE -->
+
+        <section id="message">
+
+            <h2>tere liye ek chota sa msg 💗</h2>
+
+            <div class="message">
+
+                <p>
+                    Dear [mi amor],
+                    <br><br>
+
+                    mjhe nhi pta ki ek website bta payegi 
+                    jo m feel krta hu tere liye,prr try krlete h meri jaan k liye ❤️.
+                    <br><br>
+
+                    tu itni special bnn chuki h mere liye ki kya hi btau.
+                    teri smile, teri personality, choti choti cheeze jo tu krti h mere liye,
+                    orr vo chote chote pal jo hum bitaate h saath roz
+                    m uss sbko appreciate krta hu.
+                    <br><br>
+
+                    So this website is just a small reminder that
+                    you are appreciated, valued, and very special to me.
+                    ❤️
+                    <br><br>
+
+                    — [tera or sirf tera Bhavuk]
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- REASONS -->
+
+        <section>
+
+            <h2>Some Things I Love About You 🌸</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="emoji">😊</div>
+                    <h3>teri smile</h3>
+                    <p>
+                        isse dkh ke mera bura jata hua din bhi accha ho jata hai.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="emoji">✨</div>
+                    <h3>teri aankhe</h3>
+                    <p>
+                        bhyii teri aankho m bhavuk dooba hua h 4 saal se bss.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="emoji">💖</div>
+                    <h3>teri khushi</h3>
+                    <p>
+                        teri khushi hi mere liye sb kuch h chahe koi kch bhi kre uss khushi ko km mtt hone dio.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SURPRISE -->
+
+        <section>
+
+            <h2>ek aakhri cheez... 👀</h2>
+
+            <button onclick="showSurprise()">
+                Click Me ❤️
+            </button>
+
+            <div id="surprise" class="surprise">
+                iss poori duniya m sirf tu hi meri favourite person hai. ❤️
+                <br>
+                And I'm really blessed I have you baby.
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <footer>
+        Made with ❤️ by [tumhara suar]
+    </footer>
+
+
+    <script>
+
+        function scrollToMessage() {
+            document.getElementById("message").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        function showSurprise() {
+
+            document.getElementById("surprise").style.display = "block";
+
+            // Create floating hearts
+            for (let i = 0; i < 20; i++) {
+
+                const heart = document.createElement("div");
+
+                heart.innerHTML = "❤️";
+
+                heart.style.position = "fixed";
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.bottom = "0";
+                heart.style.fontSize = "25px";
+                heart.style.zIndex = "999";
+
+                document.body.appendChild(heart);
+
+                heart.animate(
+                    [
+                        {
+                            transform: "translateY(0)",
+                            opacity: 1
+                        },
+                        {
+                            transform: "translateY(-100vh)",
+                            opacity: 0
+                        }
+                    ],
+                    {
+                        duration: 3000 + Math.random() * 2000,
+                        easing: "ease-out"
+                    }
+                );
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 5000);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
